@@ -1,4 +1,5 @@
 const display = document.getElementById('display');
+const history = document.getElementById('history');
 
 function appendToDisplay(value) {
     display.value += value;
@@ -14,7 +15,10 @@ function deleteLast() {
 
 function calculate() {
     try {
-        display.value = eval(display.value);
+        const expression = display.value;
+        const result = eval(expression);
+        history.innerHTML += `<div>${expression} = ${result}</div>`;
+        display.value = result;
     } catch {
         display.value = 'Error';
     }
