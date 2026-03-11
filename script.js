@@ -137,13 +137,13 @@ document.addEventListener('click', (e) => {
 });
 
 // Keyboard support
-document.addEventListener('keydown', (e) => {
-    if (/^[0-9]$/.test(e.key)) appendToDisplay(e.key);
-    else if ('+-*/().'.includes(e.key)) appendToDisplay(e.key);
-    else if (e.key === 'Enter') {
-        e.preventDefault();
-        calculate();
-    } else if (e.key === 'Backspace') deleteLast();
-    else if (e.key === 'Escape') clearDisplay();
-    else if (e.key === '%') percent();
-});
+// document.addEventListener('keydown', (e) => {
+//     if (/^[0-9]$/.test(e.key)) appendToDisplay(e.key);
+//     else if ('+-*/().'.includes(e.key)) appendToDisplay(e.key);
+//     else if (e.key === 'Enter') {
+//         e.preventDefault();
+//         calculate();
+//     } else if (e.key === 'Backspace') deleteLast();
+//     else if (e.key === 'Escape') clearDisplay();
+//     else if (e.key === '%') percent();
+// });
