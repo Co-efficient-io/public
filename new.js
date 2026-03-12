@@ -17,4 +17,4 @@ function calculateWeather(temp, humidity, windSpeed) {
     };
 }
 
-module.exports = calculateWeather;
+// module.exports = calculateWeather;
